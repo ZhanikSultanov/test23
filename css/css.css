@@ -1,0 +1,50 @@
+body{
+background-color: #a0d2eb ;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  transition:0.6s;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;/* Убрали подчеркивание*/
+  transition:0.6s;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;/* управляет отображением содержания блочного элемента*/
+  transition:0.6s;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  	transition:0.6s;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  	transition:0.6s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;/* Фиксация */
+  background-color: #f9f9f9;
+  min-width: 160px;/* минимальная ширина  */
+  box-shadow: 10px 8px 16px 10px;/* тени от выподающих элементов  */
+  z-index: 1;
+  opacity:0.5;
+  	transition:0.6s;
+}
+.dropdown-content:hover{
+	opacity:1;
+	transition:0.6s;
+} 
